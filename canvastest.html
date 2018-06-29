@@ -1,0 +1,34 @@
+<script src="js/jquery.min.js></script>
+<script src="js/jcanvas.min.js></script>
+<script src="js/script.js></script>
+
+
+<h2>jCanvas example: Rectangle</h2>
+
+<canvas id="myCanvas" width="600" height="300">
+  <p>This is fallback content for users of assistive technologies or of browsers that don't have full support for the Canvas API.</p>
+</canvas>
+body {
+  text-align: center;
+}
+
+canvas {
+  margin: auto;
+  display: block;
+}
+var $myCanvas = $('#myCanvas');
+
+// rectangle shape 
+$myCanvas.drawRect({
+  fillStyle: 'steelblue',
+  strokeStyle: 'blue',
+  strokeWidth: 4,
+  x: 190,
+  y: 50,
+  fromCenter: false,
+  width: 200,
+  height: 100
+});
+
+
+
